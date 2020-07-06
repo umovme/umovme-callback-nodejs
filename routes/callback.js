@@ -26,4 +26,18 @@ router.post('/basic', function(req, res, next) {
     ));
 });
 
+/* Reading post parameter data from callback and getting authorization basic parameter */
+router.post('/xcsrf', function(req, res, next) {
+  console.log(`x-csrf-token parameter => ${req.headers['x-csrf-token']}`);
+  console.log(`Authorization header parameter => ${req.headers.authorization}`)
+  console.log(`Parameter data => ${req.body.data}`);
+  res.status(200);
+  res.setHeader('Content-Type', 'application/json');
+  res.send(JSON.stringify(
+    { 
+        message : 'ok'
+    }
+    ));
+});
+
 module.exports = router;
