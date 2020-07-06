@@ -22,11 +22,9 @@ npm start
 
 ### Callback with no authentication
 
-The below example shows a simple callback made by uMov.me integration. Take a look in details:
- * HTTPD verb will be always POST
- * Content type will be send as application/x-www-form-urlencoded'
- * JSON content will be send inside data variable
+The below examples shows how uMov.me's callback could be send.
 
+### Callback with no authentication
 ```javascript
 POST 'http://localhost:3000/callback/basic'
 Headers:
