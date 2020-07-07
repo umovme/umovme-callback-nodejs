@@ -22,7 +22,7 @@ npm start
 
 ### Callback with no authentication
 
-The below examples shows how uMov.me's callback could be send.
+The below examples shows how uMov.me's callback could be sent.
 
 ### Callback with no authentication
 ```javascript
